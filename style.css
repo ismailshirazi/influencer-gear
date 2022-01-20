@@ -1,16 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,700&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #AAAAAA;
 }
-
-section{
+main{
     display: flex;
+    justify-content: center;
+}   
+
+.top-influencer{
+    background-color: #FFFFFF;
+    width: 800px;
+}
+.influencers{
+    display: flex;  
+}
+.influencer-title{
+    color: #3A3A3A;
+   
 }
 .half-width{
     width: 582px;
     height: 270px;
     padding-left: 80px;
     padding-top: 120px;
+    
 }
 .half-width img{
     width: 220px;
@@ -28,4 +42,30 @@ section{
 .fa-arrow-right{
     font-size: 12px;
     margin-left: 10px;
+}
+/* collection style */
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.collection-title{
+    text-align: center;
+}
+.collection{
+    padding-left: 35px;
+}
+.collection .thumbnail img{
+    width: 200px;
+    height: 104px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.collection-info{
+    display: flex;
+    align-items: center;
 }
